@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <applicationVisibilities>
+        <application>Sustainability_Console</application>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <description>custom application built from Sustainability Cloud</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>SustainabilityCustom</label>
+</PermissionSet>
