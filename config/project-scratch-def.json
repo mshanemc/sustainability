@@ -2,6 +2,12 @@
   "orgName": "sustainability",
   "adminEmail": "sfdx@mailinator.com",
   "edition": "Developer",
+  "features": [
+    "SUSTAINABILITYCLOUD",
+    "AnalyticsAdminPerms",
+    "DevelopmentWave",
+    "EinsteinAnalyticsPlus"
+  ],
   "settings": {
     "communitiesSettings": {
       "enableNetworksEnabled": false
