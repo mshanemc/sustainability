@@ -18,4 +18,4 @@ sfdx shane:analytics:app:share -n Sustainability --org
 sfdx force:source:push
 sfdx force:user:permset:assign -n SustainabilityCustom
 
-sfdx force:org:open -p /lightning/app/Sustainability_Console
+sfdx force:org:open -p /lightning/app/c__Sustainability_Console
