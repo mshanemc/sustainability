@@ -14,8 +14,7 @@
     "prettier": "prettier --write \"**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}\"",
     "prettier:verify": "prettier --list-different \"**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}\"",
     "build": "sfdx shane:org:delete; ./orgInit.sh",
-    "query": "sfdx automig:dump -d data -o sustain_app__ServiceProvider__c,sustain_app__ExtrapolationLog__c,sustain_app__EnergyConsumption__c,sustain_app__EmissionFactorScope3__c,sustain_app__EmissionFactorOther__c,sustain_app__EmissionFactorElectricity__c,sustain_app__Contract__c,sustain_app__Contact__c,sustain_app__ConsumptionReportItem__c,sustain_app__ConsumptionReport__c,sustain_app__AssetContact__c,sustain_app__Asset__c",
-    "publish": "sfdx shane:package2:version:bump -m -r; git add sfdx-project.json; git commit -m 'package version bump'; git push origin master"
+    "query": "sfdx automig:dump -d data -o RecordType,sustain_app__ServiceProvider__c,sustain_app__ExtrapolationLog__c,sustain_app__EnergyConsumption__c,sustain_app__EmissionFactorScope3__c,sustain_app__EmissionFactorOther__c,sustain_app__EmissionFactorElectricity__c,sustain_app__Contract__c,sustain_app__Contact__c,sustain_app__ConsumptionReportItem__c,sustain_app__ConsumptionReport__c,sustain_app__AssetContact__c,sustain_app__Asset__c"
   },
   "devDependencies": {
     "@prettier/plugin-xml": "^0.7.0",
