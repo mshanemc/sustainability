@@ -1,9 +1,6 @@
 sfdx force:org:create -f config/project-scratch-def.json -d 1 -s
-# april version
-# sfdx force:package:install --package 04t3k0000027AysAAE -w 20
+sfdx force:package:install --package 04t3k0000027AysAAE -w 20
 
-# march version
-sfdx force:package:install --package 04t3k0000027AglAAE -w 20
 
 # Special perm/license stuff for SustCloud
 sfdx shane:user:psl -l User -g User -n sustain_app_SustainabilityCloudPsl
