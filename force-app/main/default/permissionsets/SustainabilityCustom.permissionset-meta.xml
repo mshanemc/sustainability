@@ -7,4 +7,8 @@
     <description>custom application built from Sustainability Cloud</description>
     <hasActivationRequired>false</hasActivationRequired>
     <label>SustainabilityCustom</label>
+    <tabSettings>
+        <tab>Business_Travel_Impact</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
 </PermissionSet>
