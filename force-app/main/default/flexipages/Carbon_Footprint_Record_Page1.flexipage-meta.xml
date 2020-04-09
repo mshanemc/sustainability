@@ -168,6 +168,13 @@
                 <value>true</value>
             </componentInstanceProperties>
             <componentName>flexipage:reportChart</componentName>
+            <visibilityRule>
+                <criteria>
+                    <leftValue>{!Record.RecordType.DeveloperName}</leftValue>
+                    <operator>EQUAL</operator>
+                    <rightValue>Real_Estate_Facility</rightValue>
+                </criteria>
+            </visibilityRule>
         </componentInstances>
         <componentInstances>
             <componentInstanceProperties>
