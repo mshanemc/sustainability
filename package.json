@@ -4,6 +4,8 @@
   "version": "0.0.1",
   "description": "",
   "scripts": {
+    "build": "sfdx shane:org:delete; ./orgInit.sh",
+    "data:prep": "xsv select '!sustain_app__Departure_Time__c' data/sustain_app__EnergyConsumption__c.csv > data/sustain_app__EnergyConsumption__c2.csv && mv data/sustain_app__EnergyConsumption__c2.csv data/sustain_app__EnergyConsumption__c.csv",
     "lint": "npm run lint:lwc",
     "lint:lwc": "eslint force-app/main/default/lwc",
     "test": "npm run test:unit",
@@ -13,7 +15,6 @@
     "test:unit:coverage": "sfdx-lwc-jest --coverage",
     "prettier": "prettier --write \"**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}\"",
     "prettier:verify": "prettier --list-different \"**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}\"",
-    "build": "sfdx shane:org:delete; ./orgInit.sh",
     "query": "sfdx automig:dump -d data -o RecordType,sustain_app__ServiceProvider__c,sustain_app__ExtrapolationLog__c,sustain_app__EnergyConsumption__c,sustain_app__EmissionFactorScope3__c,sustain_app__EmissionFactorOther__c,sustain_app__EmissionFactorElectricity__c,sustain_app__Contract__c,sustain_app__Contact__c,sustain_app__ConsumptionReportItem__c,sustain_app__ConsumptionReport__c,sustain_app__AssetContact__c,sustain_app__Asset__c"
   },
   "devDependencies": {
