@@ -14,7 +14,7 @@ sfdx shane:user:permset:assign -l User -g Integration -n SustainabilityAnalytics
 
 sfdx automig:load -d data --concise --mappingobjects RecordType:DeveloperName
 
-sfdx analytics:app:create -f assets/analyticsAppCreateDef.json
+sfdx analytics:app:create -f assets/analyticsAppCreateDef.json -w 60
 sfdx shane:analytics:app:share -n Sustainability --org
 sfdx force:source:push
 sfdx force:user:permset:assign -n SustainabilityCustom
